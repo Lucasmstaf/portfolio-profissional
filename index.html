@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Lucas Mustafa, desenvolvedor .NET especializado em C#, desenvolvimento web moderno, performance e acessibilidade.">
+    <meta name="keywords" content="Lucas Mustafa, desenvolvedor .NET, C#, desenvolvedor web, portfólio, programador, engenharia de software">
+    <meta name="author" content="Lucas Mustafa">
     <title>Lucas Mustafa | Desenvolvedor .NET</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <button id="botao-tema" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
+        <button class="menu-hamburguer" id="btn-menu-hamburguer" aria-label="Menu de Navegação">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="cabecalho__menu" id="menu-navegacao">
             <a class="cabecalho__menu__link" href="index.html">Início</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre</a>
-            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
         </nav>
     </header>
 
@@ -24,9 +34,8 @@
                 Olá, eu sou <strong class="titulo-destaque">Lucas Mustafa</strong>
             </h1>
             <p class="apresentacao__conteudo__texto">
-                Desenvolvedor .NET apaixonado por criar experiências digitais excepcionais. 
-                Especializado em desenvolvimento de sistemas modernos, com foco em performance, 
-                acessibilidade e experiência do usuário.
+                Estudante de Engenharia de Software buscando oportunidade em desenvolvimento de sistemas. Trago sólida vivência em prestação de serviços, garantindo foco no cliente e comunicação clara. 
+                Possuo perfil analítico, proatividade e rápida capacidade de adaptação a novos ambientes de trabalho. Busco transformar conhecimento técnico em soluções e resultados reais.
             </p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__link__subtitulo">Acesse minhas redes:</h2>
@@ -49,17 +58,6 @@
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <div class="rodape__contato">
-                <div class="rodape__contato-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:lucasgmustafa@hotmail.com">lucasgmustafa@hotmail.com</a>
-                </div>
-                <div class="rodape__contato-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+5521987752897">(21) 98775-2897</a>
-                </div>
-            </div>
-            
             <a href="assets/Curriculo.pdf" class="rodape__curriculo" target="_blank">
                 <i class="fas fa-file-alt"></i>
                 Ver Currículo
@@ -77,7 +75,7 @@
                 </a>
             </div>
 
-            <p class="rodape__copyright">© 2025 Lucas Mustafa. Todos os direitos reservados.</p>
+            <p class="rodape__copyright">© 2026 Lucas Mustafa. Todos os direitos reservados.</p>
         </div>
     </footer>
 

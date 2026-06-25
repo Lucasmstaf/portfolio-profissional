@@ -1,20 +1,20 @@
 /* Variáveis Globais */
 :root {
     /* Tipografia */
-    --font-primaria: 'Cormorant Garamond', serif;
+    --font-primaria: 'Outfit', sans-serif;
     --font-secundaria: 'Inter', sans-serif;
 
     /* Cores */
-    --cor-primaria: #1a1a1a;
-    --cor-secundaria: #4d4d4d;
-    --cor-destaque: #ff4d4d;
-    --cor-hover: #4d9eff;
-    --cor-sombra: rgba(0, 0, 0, 0.1);
-    --cor-sombra-hover: rgba(0, 0, 0, 0.2);
+    --cor-primaria: #f8fafc;
+    --cor-secundaria: #0f172a;
+    --cor-destaque: #0d9488;
+    --cor-hover: #0d9488;
+    --cor-sombra: rgba(15, 23, 42, 0.05);
+    --cor-sombra-hover: rgba(15, 23, 42, 0.1);
 
     /* Gradientes */
-    --gradiente-primario: linear-gradient(90deg, #4d9eff 0%, #2b5876 100%);
-    --gradiente-secundario: linear-gradient(90deg, #f5f5f5 0%, #e0e0e0 100%);
+    --gradiente-primario: linear-gradient(135deg, #0d9488 0%, #0ea5e9 100%);
+    --gradiente-secundario: linear-gradient(135deg, #64748b 0%, #0f172a 100%);
 
     /* Bordas */
     --borda-radius: 8px;

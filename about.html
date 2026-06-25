@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiba mais sobre Lucas Mustafa, bacharelando em Engenharia de Software e desenvolvedor .NET, especializado em soluções modernas e performáticas.">
+    <meta name="keywords" content="Lucas Mustafa, sobre mim, desenvolvedor .NET, C#, engenharia de software, UniCesumar">
+    <meta name="author" content="Lucas Mustafa">
     <title>Sobre | Lucas Mustafa</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <button id="botao-tema" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
+        <button class="menu-hamburguer" id="btn-menu-hamburguer" aria-label="Menu de Navegação">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="cabecalho__menu" id="menu-navegacao">
             <a class="cabecalho__menu__link" href="index.html">Início</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre</a>
-            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
         </nav>
     </header>
 
@@ -22,18 +32,21 @@
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Sobre Mim</h1>
             <p class="apresentacao__conteudo__texto">
-                Sou um desenvolvedor .NET apaixonado por tecnologia e inovação. 
-                Minha jornada na programação começou com o desenvolvimento web, e desde então 
-                venho me dedicando a criar soluções digitais que fazem a diferença.
+                Sou estudante de Engenharia de Software focado em construir uma base técnica sólida e versátil. 
+                Encaro o desenvolvimento de sistemas de forma prática: a tecnologia é uma ferramenta para resolver problemas reais e otimizar processos.
+                Durante minha formação, tenho buscado entender o ciclo completo de uma aplicação. 
+                Meus estudos e projetos práticos envolvem desde a criação de interfaces web responsivas e interativas até a estruturação da lógica de back-end. 
+                Sou adaptável e tenho facilidade para migrar entre diferentes tecnologias e linguagens conforme a necessidade do projeto.
             </p>
             <p class="apresentacao__conteudo__texto">
-                Atualmente, estou focado em desenvolvimento .NET , utilizando tecnologias 
-                como C#. Meu objetivo é criar aplicações que não apenas 
-                funcionem bem, mas também proporcionem uma experiência excepcional para os usuários.
+                Minha vivência profissional prévia na prestação de serviços me ensinou a ter responsabilidade com prazos, 
+                a entender a necessidade do cliente e a lidar com ambientes dinâmicos. Agora, meu objetivo é conectar essa maturidade profissional ao desenvolvimento de software, 
+                integrando equipes onde eu possa contribuir com entregas reais enquanto continuo evoluindo tecnicamente.
             </p>
             <p class="apresentacao__conteudo__texto">
-                Além da programação, sou um entusiasta de novas tecnologias e estou sempre 
-                buscando aprender e me atualizar com as últimas tendências do mercado.
+                Além de programar, tenho um forte interesse pela arquitetura por trás do código. 
+                Gosto de explorar os fundamentos de infraestrutura em nuvem, ferramentas de linha de comando e otimização de sistemas operacionais, 
+                pois acredito que entender o ambiente onde a aplicação roda é essencial para escrever códigos mais eficientes.
             </p>
         </section>
         <img class="apresentacao__imagem" src="./assets/imagem2.jpeg" alt="Foto de Lucas Mustafa">
@@ -41,17 +54,6 @@
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <div class="rodape__contato">
-                <div class="rodape__contato-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:lucasgmustafa@hotmail.com">lucasgmustafa@hotmail.com</a>
-                </div>
-                <div class="rodape__contato-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+5521987752897">(21) 98775-2897</a>
-                </div>
-            </div>
-            
             <a href="assets/Curriculo.pdf" class="rodape__curriculo" target="_blank">
                 <i class="fas fa-file-alt"></i>
                 Ver Currículo
@@ -69,7 +71,7 @@
                 </a>
             </div>
 
-            <p class="rodape__copyright">© 2025 Lucas Mustafa. Todos os direitos reservados.</p>
+            <p class="rodape__copyright">© 2026 Lucas Mustafa. Todos os direitos reservados.</p>
         </div>
     </footer>
 

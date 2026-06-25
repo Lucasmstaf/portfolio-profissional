@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore os projetos desenvolvidos por Lucas Mustafa, incluindo portfólios web e sistemas back-end em C# e .NET.">
+    <meta name="keywords" content="Lucas Mustafa, projetos, portfólio, C#, .NET, ASP.NET Core, desenvolvimento web, GitHub">
+    <meta name="author" content="Lucas Mustafa">
     <title>Projetos | Lucas Mustafa</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <button id="botao-tema" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
+        <button class="menu-hamburguer" id="btn-menu-hamburguer" aria-label="Menu de Navegação">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="cabecalho__menu" id="menu-navegacao">
             <a class="cabecalho__menu__link" href="index.html">Início</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre</a>
-            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
         </nav>
     </header>
 
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+        <section class="apresentacao__conteudo" style="width: 100%;">
             <h1 class="apresentacao__conteudo__titulo">Meus Projetos</h1>
             <p class="apresentacao__conteudo__texto">
-                Aqui estão alguns dos projetos que desenvolvi durante minha jornada como desenvolvedor.
+                Aqui estão alguns dos projetos que desenvolvi durante minha jornada como desenvolvedor. Use os filtros para navegar pelas categorias.
             </p>
+
+            <div class="projetos__filtros">
+                <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="web">Front-end / Web</button>
+                <button class="filtro-btn" data-filtro="backend">Back-end / .NET</button>
+            </div>
+
             <div class="projetos">
-                <div class="projeto">
+                <div class="projeto" data-categoria="web">
                     <h2 class="apresentacao__conteudo__titulo">Portfólio Pessoal</h2>
                     <p class="apresentacao__conteudo__texto">
                         Desenvolvimento de um portfólio responsivo e moderno utilizando HTML, CSS e JavaScript.
@@ -38,14 +55,40 @@
                         </a>
                     </div>
                 </div>
-                <div class="projeto">
+                <div class="projeto" data-categoria="backend">
                     <h2 class="apresentacao__conteudo__titulo">Sistema de Cadastro de Bandas</h2>
                     <p class="apresentacao__conteudo__texto">
-                        Aplicação back-end para gerenciamento de cadastro, desenvolvida com C#.
+                        Aplicação back-end para gerenciamento de cadastro, desenvolvida com C# e .NET.
                         Inclui cadastro de bandas, músicas e avaliações.
                     </p>
                     <div class="projeto__links">
-                        <a class="apresentacao__links__navegacao" href="https://github.com/luskaa/gerenciador">
+                        <a class="apresentacao__links__navegacao" href="https://github.com/Lucasmstaf/MustafaSound">
+                            <img src="./assets/githubgreen.png" alt="Ícone do GitHub">
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projeto" data-categoria="backend">
+                    <h2 class="apresentacao__conteudo__titulo">Sistema de Gerenciamento de Estoque</h2>
+                    <p class="apresentacao__conteudo__texto">
+                        Este é um sistema modular de gerenciamento de estoque desenvolvido em .NET 10. O projeto segue uma arquitetura distribuída, 
+                        separando as responsabilidades em uma API de backend, uma interface de linha de comando (CLI) e uma biblioteca de modelos compartilhados.
+                    </p>
+                    <div class="projeto__links">
+                        <a class="apresentacao__links__navegacao" href="https://github.com/Lucasmstaf/SistemaDeEstoque">
+                            <img src="./assets/githubgreen.png" alt="Ícone do GitHub">
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projeto" data-categoria="web">
+                    <h2 class="apresentacao__conteudo__titulo">Autores do Realismo</h2>
+                    <p class="apresentacao__conteudo__texto">
+                        Esta aplicação oferece acesso rápido a informações sobre os grandes nomes do movimento realista. Explore biografias, 
+                        obras emblemáticas e características literárias dos autores que revolucionaram a literatura com sua abordagem crítica da sociedade.
+                    </p>
+                    <div class="projeto__links">
+                        <a class="apresentacao__links__navegacao" href="https://github.com/Lucasmstaf/autoresRealismo">
                             <img src="./assets/githubgreen.png" alt="Ícone do GitHub">
                             Ver no GitHub
                         </a>
@@ -53,22 +96,10 @@
                 </div>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/chave2.0.JPG" alt="Foto de Lucas Mustafa">
     </main>
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <div class="rodape__contato">
-                <div class="rodape__contato-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:lucasgmustafa@hotmail.com">lucasgmustafa@hotmail.com</a>
-                </div>
-                <div class="rodape__contato-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+5521987752897">(21) 98775-2897</a>
-                </div>
-            </div>
-            
             <a href="assets/Curriculo.pdf" class="rodape__curriculo" target="_blank">
                 <i class="fas fa-file-alt"></i>
                 Ver Currículo
@@ -86,7 +117,7 @@
                 </a>
             </div>
 
-            <p class="rodape__copyright">© 2025 Lucas Mustafa. Todos os direitos reservados.</p>
+            <p class="rodape__copyright">© 2026 Lucas Mustafa. Todos os direitos reservados.</p>
         </div>
     </footer>
 

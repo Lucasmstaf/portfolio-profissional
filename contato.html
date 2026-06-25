@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com Lucas Mustafa. Envie uma mensagem para propostas de desenvolvimento .NET, dúvidas ou feedback.">
+    <meta name="keywords" content="Lucas Mustafa, contato, desenvolvedor .NET, C#, enviar mensagem, engenharia de software">
+    <meta name="author" content="Lucas Mustafa">
+    <title>Contato | Lucas Mustafa</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <button id="botao-tema" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+    <header class="cabecalho">
+        <button class="menu-hamburguer" id="btn-menu-hamburguer" aria-label="Menu de Navegação">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="cabecalho__menu" id="menu-navegacao">
+            <a class="cabecalho__menu__link" href="index.html">Início</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <div class="contato__container">
+            <section class="contato__form-sec">
+                <h1 class="apresentacao__conteudo__titulo">Fale Comigo</h1>
+                <p class="apresentacao__conteudo__texto">
+                    Tem uma proposta, dúvida ou gostaria de conversar sobre um projeto? Preencha o formulário abaixo e entrarei em contato o mais breve possível.
+                </p>
+
+                <!-- Feedback Div -->
+                <div id="form-feedback" class="feedback-mensagem"></div>
+
+                <form id="contato-form" novalidate>
+                    <div class="form-grupo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu nome" required minlength="3">
+                        <span class="form-erro" id="erro-nome"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control" placeholder="seu.email@exemplo.com" required>
+                        <span class="form-erro" id="erro-email"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" class="form-control" placeholder="Qual o assunto da mensagem?" required>
+                        <span class="form-erro" id="erro-assunto"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" class="form-control" rows="5" placeholder="Sua mensagem..." required minlength="10"></textarea>
+                        <span class="form-erro" id="erro-mensagem"></span>
+                    </div>
+
+                    <button type="submit" class="btn-enviar" id="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </section>
+
+            <aside class="contato__info-sec">
+                <div class="info-card">
+                    <h3>Canais Diretos</h3>
+                    <p class="apresentacao__conteudo__texto" style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        Se preferir, sinta-se à vontade para me contatar diretamente através dos seguintes canais:
+                    </p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:lucasgmustafa@hotmail.com">lucasgmustafa@hotmail.com</a>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+5521987752897">(21) 98775-2897</a>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rio de Janeiro - RJ, Brasil</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Redes Sociais</h3>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/lucasgmustafa/" target="_blank">linkedin.com/in/lucasgmustafa/</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Lucasmstaf" target="_blank">github.com/Lucasmstaf</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/lucasmstaf/" target="_blank">@lucasmstaf</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <a href="assets/Curriculo.pdf" class="rodape__curriculo" target="_blank">
+                <i class="fas fa-file-alt"></i>
+                Ver Currículo
+            </a>
+
+            <div class="rodape__social">
+                <a href="https://github.com/Lucasmstaf" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lucasgmustafa/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/lucasmstaf/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <p class="rodape__copyright">© 2026 Lucas Mustafa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
