@@ -1,49 +1,92 @@
-# Arquivos do sistema operacional
+# --- SISTEMA OPERACIONAL ---
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Arquivos de IDE/Editor
+# --- IDEs E EDITORES ---
 .vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
 *.sublime-project
 *.sublime-workspace
+.history/
+.project
+.settings/
+.classpath
 
-# Arquivos de dependências
+# --- DEPENDÊNCIAS ---
 node_modules/
-package-lock.json
-yarn.lock
+bower_components/
+jspm_packages/
+web_modules/
+.npm/
+.yarn/
 
-# Arquivos de ambiente
+# --- VARIÁVEIS DE AMBIENTE E SEGURANÇA ---
 .env
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.pem
+*.key
+*.cert
 
-# Arquivos de build
-dist/
-build/
-*.min.js
-*.min.css
-
-# Arquivos de cache
+# --- CACHE E TEMPORÁRIOS ---
 .cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.sass-cache/
 .temp/
 .tmp/
+temp/
+tmp/
+*.tsbuildinfo
 
-# Arquivos de log
+# --- LOGS ---
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Arquivos de backup
-*.bak
-*.swp
-*~
+# --- COMPILAÇÃO / BUILD / DEPLOY ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.docusaurus/
+.deploy/
+deploy/
 
-# Arquivos de teste
+# --- PYTHON (AMBIENTES VIRTUAIS) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+venv/
+.venv/
+env/
+ActiveState.venv
+
+# --- TESTES ---
 coverage/
 .nyc_output/
-
-# Arquivos de deploy
-.deploy/
-deploy/ 
+.playwright/
